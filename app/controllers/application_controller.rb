@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  attr_reader :current_user
+  helper_method :current_user
 
   def log_in!(user)
     user.reset_session_token!

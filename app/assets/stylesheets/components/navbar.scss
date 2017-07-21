@@ -1,0 +1,72 @@
+header {
+  // border: 1px solid black;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  #titlep1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: whitesmoke;
+  }
+  #titlep2 {
+    font-size: 26px;
+    margin-top: 20px;
+    color: whitesmoke;
+  }
+}
+
+.header-group {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 25px;
+  color: whitesmoke;
+  text-transform: capitalize;
+}
+
+.header-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-button:hover {
+    text-decoration: underline;
+    color: #288EAD !important;
+}
+
+
+.login-signup {
+  font-size: 14px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.loginbutton:hover {
+  text-decoration: underline;
+  color: #288EAD !important;
+}
+
+.signupbutton:hover {
+  text-decoration: underline;
+  color: #288EAD !important;
+}
+
+span {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.login-signup {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.loginSpec:hover {
+  text-decoration: underline;
+}
+
