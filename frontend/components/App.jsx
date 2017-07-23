@@ -10,7 +10,6 @@ import {
 
 import Manifesto from './modal/manifesto_modal.jsx';
 import NavbarContainer from './navbar/navbar_container';
-import SessionFormContainer from './session_form/session_form_container';
 // import AuthRoute from '../util/route_util.jsx'
 
 const App = () => (
@@ -26,13 +25,12 @@ const App = () => (
       <NavbarContainer />
     </header>
     <bodytext className="maintext">
-      <Switch>
-        <Route path="/login" component={SessionFormContainer} />
-        <Route path="/signup" component={SessionFormContainer} />
-      </Switch>
     </bodytext>
   </div>
 );
 
 export default App;
 
+
+// <Route path="/login" component={SessionFormContainer} />
+// <Route path="/signup" component={SessionFormContainer} />

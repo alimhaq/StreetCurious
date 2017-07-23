@@ -11,6 +11,8 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.clearErrors = this.clearErrors.bind(this);
     this.handleDemo = this.handleDemo.bind(this);
+    this.loginModal = this.loginModal.bind(this);
+    this.signupModal = this.signupModal.bind(this);
   }
 
   // componentWillReceiveProps(nextProps) {
@@ -21,6 +23,18 @@ class SessionForm extends React.Component {
 
   clearErrors() {
     this.props.clearErrors();
+  }
+
+  loginModal(e) {
+    // preventDefault(e);
+    this.clearErrors();
+    this.props.openModal('login');
+  }
+
+  signupModal(e) {
+    // preventDefault(e);
+    this.clearErrors();
+    this.props.openModal('signup');
   }
 
   update(field) {
@@ -43,9 +57,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link onClick={this.clearErrors} to="/signup">sign up instead</Link>;
+      return <button onClick={this.signupModal}>sign up instead</button>;
     } else {
-      return <Link onClick={this.clearErrors} to="/login">log in instead</Link>;
+      return <button onClick={this.loginModal}>log in instead</button>;
     }
   }
 
@@ -62,6 +76,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">

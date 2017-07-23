@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactModal from 'react-modal';
+import SessionFormContainer from '../session_form/session_form_container.jsx'
 
 class SessionModal extends React.Component {
-  constructor () {
-    super();
+  constructor (props) {
+    super(props);
     this.state = {
       showModal: false
     };
@@ -60,6 +61,7 @@ class SessionModal extends React.Component {
         <span>
         </span>
           <button onClick={this.handleCloseModal}>Close Modal</button>
+          <SessionFormContainer formType={this.props.formType}/> 
         </ReactModal>
       </div>
     );
