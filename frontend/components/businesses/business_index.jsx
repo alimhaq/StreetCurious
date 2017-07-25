@@ -11,7 +11,6 @@ class BusinessIndex extends React.Component {
     return (
       <section className="business-index">
         <div className="business-index-content">
-          <h2>Featured business</h2>
           <ul className="business">
             {this.props.restaurants.map(
               business => <BusinessIndexItem key={business.id} business={business} />

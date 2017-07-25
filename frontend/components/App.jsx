@@ -26,12 +26,20 @@ const App = () => (
       </Link>
       <NavbarContainer />
     </header>
-    <bodytext className="maintext">
+    <div className="maintext">
       {/* <button onClick={() => { this.props.history.push(`/businesses`) }}></button>
        <Route path='/businesses' component={BusinessIndexContainer} />  */}
-      <SearchBarContainer />
+      <p className="search1">
+        <SearchBarContainer />
+      </p>
+      <p className="search2">
+        <SearchBarContainer />
+      </p>
+      <p className="search3">
+        <SearchBarContainer />
+      </p>
       <Route path="/test" component={BusinessIndexContainer} />
-    </bodytext>
+    </div>
   </div>
 );
 
