@@ -23,6 +23,7 @@ class Navbar extends React.Component {
   
   handleOpenModal (formType) {
     return (e) => {
+      console.log("WHAAA");
       e.preventDefault();
       this.setState({ showModal: true,
       formType });
@@ -97,7 +98,7 @@ class Navbar extends React.Component {
   personalNavbar (currentUser, logout) {
     return (
     <hgroup className="header-group">
-      <h2 className="header-name">Hi, {currentUser.username}!</h2>
+      <p className="header-name">Hi, {currentUser.username}!</p>
       <button className="header-button" onClick={this.handleLogout}>Log Out</button>
     </hgroup>
   )}

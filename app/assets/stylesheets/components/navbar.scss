@@ -33,8 +33,14 @@ header {
 }
 
 .header-button:hover {
-    text-decoration: underline;
-    color: #288EAD !important;
+  text-decoration: underline;
+  color: #288EAD !important;
+}
+
+.header-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 

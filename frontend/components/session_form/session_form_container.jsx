@@ -18,7 +18,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     processForm: user => dispatch(processForm(user)),
     clearErrors: () => dispatch(clearErrors()),
     formType,
-    loginUser: (user) => dispatch(login(user))
+    loginUser: (user) => dispatch(login(user)),
+    // openModal: ownProps.openModal
   };
 };
 

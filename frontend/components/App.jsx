@@ -10,6 +10,8 @@ import {
 
 import Manifesto from './modal/manifesto_modal.jsx';
 import NavbarContainer from './navbar/navbar_container';
+import BusinessIndexContainer from './businesses/business_index_container';
+import SearchBarContainer from './searchbar/searchbar_container';
 // import AuthRoute from '../util/route_util.jsx'
 
 const App = () => (
@@ -25,6 +27,9 @@ const App = () => (
       <NavbarContainer />
     </header>
     <bodytext className="maintext">
+      {/* <button onClick={() => { this.props.history.push(`/businesses`) }}></button>
+       <Route path='/businesses' component={BusinessIndexContainer} />  */}
+      <SearchBarContainer />
     </bodytext>
   </div>
 );

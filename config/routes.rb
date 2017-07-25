@@ -10,6 +10,6 @@ Rails.application.routes.draw do
       resources :reviews, only: [:create, :index, :show]
       resources :favorites, only: [:create]
     end
-    
+    resources :restaurants, only: [:index]
   end
 end

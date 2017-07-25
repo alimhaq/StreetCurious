@@ -65,7 +65,7 @@ class Manifesto extends React.Component {
           <h1>Welcome to <strong>street</strong>curious! <i className="em em-wave"></i></h1>
           <p>Ratings pose an interesting problem. On one hand, they can serve as a useful gauge for consumers. Unfortunately, ratings are also prone to several issues both from the user and business side. What makes us so different?</p>
             <li>
-              <strong>Laissez Faire Policy</strong><br></br>We will never take money to alter or remove reviews from business pages. All businesses on the website will be treated exactly the same. Only in clear instances of spam or fraud will reviews be removed.
+              <strong>Laissez Faire</strong><br></br>We will never take money to alter or remove reviews from business pages. All businesses on the website will be treated exactly the same. Only in clear instances of spam or fraud will reviews be removed.
             </li>
             <li>
               <strong>Binary Rating System</strong><br></br>Reviews are ultimately counted as either positive or negative and compiled to a score out of 100. This means that if just one grumpy customer has a bad experience, they won't have a significant impact on the overall score.
@@ -73,7 +73,7 @@ class Manifesto extends React.Component {
             <li>
               <strong>Weighted for Recency</strong><br></br>Businesses are dynamic; sometimes it takes a while for a business to find its foothold, while othertimes they can slip. The most recent reviews are more relevant to the experience now.
             </li>
-            <p>If you want to learn more about our mission, check out our <strong>manifesto</strong>.</p>
+            <p>If you want to learn more about our mission, check out the <strong>manifesto</strong>.</p>
           </ul>
         </span>
           <center><button onClick={this.handleCloseModal}>Replace with Continue Button</button></center>
