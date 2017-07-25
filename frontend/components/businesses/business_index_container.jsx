@@ -3,6 +3,7 @@ import BusinessIndex from './business_index';
 import { getRestaurants } from '../../actions/restaurant_actions';
 // import { selectAllRestaurants } from '../../reducers/restaurants_selector';
 // might I need a selector?
+// I wonder
 
 const mapStateToProps = state => {
   return { restaurants: selectAllRestaurants(state) };
