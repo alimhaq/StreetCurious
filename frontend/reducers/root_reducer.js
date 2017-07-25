@@ -4,7 +4,7 @@ import RestaurantsReducer from './restaurants_reducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
-  restaurantList: RestaurantsReducer
+  restaurants: RestaurantsReducer
 });
 
 export default RootReducer;

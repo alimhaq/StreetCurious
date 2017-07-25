@@ -6,7 +6,7 @@ import {
 } from '../actions/restaurant_actions';
 
 const nullRestaurantList = Object.freeze({
-  restaurantList: null,
+  restaurantList: [{}],
   errors: []
 })
 
@@ -14,7 +14,7 @@ const RestaurantsReducer = (state = nullRestaurantList, action) => {
   Object.freeze(state)
   switch(action.type) {
     case RECEIVE_RESTAURANTS:
-      const restaurantList = action.restaurants;
+      const restaurantList = action.restaurants.businesses;
       return merge({}, nullRestaurantList, {
         restaurantList
       });

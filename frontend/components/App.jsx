@@ -30,6 +30,7 @@ const App = () => (
       {/* <button onClick={() => { this.props.history.push(`/businesses`) }}></button>
        <Route path='/businesses' component={BusinessIndexContainer} />  */}
       <SearchBarContainer />
+      <Route path="/test" component={BusinessIndexContainer} />
     </bodytext>
   </div>
 );
