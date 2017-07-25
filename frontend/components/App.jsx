@@ -26,20 +26,14 @@ const App = () => (
       </Link>
       <NavbarContainer />
     </header>
-    <div className="maintext">
       {/* <button onClick={() => { this.props.history.push(`/businesses`) }}></button>
        <Route path='/businesses' component={BusinessIndexContainer} />  */}
-      <p className="search1">
-        <SearchBarContainer />
-      </p>
-      <p className="search2">
-        <SearchBarContainer />
-      </p>
-      <p className="search3">
-        <SearchBarContainer />
-      </p>
-      <Route path="/test" component={BusinessIndexContainer} />
-    </div>
+      <span className="search1">
+        <Route exact path='/' component={SearchBarContainer} />
+      </span>
+      <span className="businesslist">
+        <Route path="/test" component={BusinessIndexContainer} />
+      </span>
   </div>
 );
 

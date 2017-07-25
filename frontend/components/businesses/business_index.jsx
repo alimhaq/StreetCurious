@@ -12,9 +12,11 @@ class BusinessIndex extends React.Component {
       <section className="business-index">
         <div className="business-index-content">
           <ul className="business">
+            <li>
             {this.props.restaurants.map(
               business => <BusinessIndexItem key={business.id} business={business} />
             )}
+            </li>
           </ul>
         </div>
       </section>

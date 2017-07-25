@@ -8,23 +8,33 @@ class BusinessIndexItem extends React.Component {
 
   render() {
     return (
-      <li className="business">
+
         <div className="business-outline">
-          <span>
+
             <div className="business-image">
-              <Link to={`/business/${this.props.business.id}`}>
-                <img src={this.props.business.image_url} alt={this.props.business.name} />
-              </Link>
+
+                <Link to={`/business/${this.props.business.id}`}>
+                  <img src={this.props.business.image_url} alt={this.props.business.name} />
+                </Link>
+
             </div>
-          </span>
-          <span>
-            <div className="business-info">
-              <div className="business-category">
-              </div>
-            </div>
-          </span>
+            <span className="businesscards">
+              <ul>
+                <li>
+                  <strong>{this.props.business.name}</strong>
+                </li>
+                <li>
+                  {this.props.business.phone}
+                </li>
+                <li>
+                  {this.props.business.price}
+                </li>
+                <li>
+                  {this.props.business.rating}
+                </li>
+              </ul>
+            </span>
         </div>
-      </li>
     );
   }
 }

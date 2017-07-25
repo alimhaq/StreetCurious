@@ -23,10 +23,11 @@ class SearchBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({place: this.input.value});
-    let currentInput = this.input.value;
+    this.props.history.push(`/test`)
+    // this.setState({place: this.input.value});
+    // let currentInput = this.input.value;
 
-    e.target.firstChild.value = '';
+    // e.target.firstChild.value = '';
   }
 
   render() {
@@ -37,7 +38,7 @@ class SearchBar extends React.Component {
           type="search"
           id="searchTextField"
           className="search-bar"
-          placeholder="Search..."
+          placeholder="whateva ya want :)"
           ref={input => this.input = input}
           onChange={this.update('place')}
         />
