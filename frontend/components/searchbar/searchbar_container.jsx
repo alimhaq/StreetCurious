@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import SearchBar from './SearchBar';
+import SearchBar from './searchbar';
 import { withRouter } from 'react-router-dom';
 // import { changeFilter } from '../../actions/filter_actions';
 
