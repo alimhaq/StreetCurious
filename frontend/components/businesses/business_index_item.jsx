@@ -8,7 +8,7 @@ class BusinessIndexItem extends React.Component {
 
   render() {
     return (
-
+      <li>
         <div className="business-outline">
 
             <div className="business-image">
@@ -30,11 +30,12 @@ class BusinessIndexItem extends React.Component {
                   {this.props.business.price}
                 </li>
                 <li>
-                  {this.props.business.rating}
+                  {this.props.business.rating * 20}
                 </li>
               </ul>
             </span>
         </div>
+      </li>
     );
   }
 }

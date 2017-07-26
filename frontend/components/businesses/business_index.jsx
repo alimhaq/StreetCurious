@@ -1,5 +1,6 @@
 import React from 'react';
 import BusinessIndexItem from './business_index_item';
+import { CSSTransitionGroup } from 'react-transition-group'
 
 class BusinessIndex extends React.Component {
   componentDidMount() {
@@ -11,13 +12,15 @@ class BusinessIndex extends React.Component {
     return (
       <section className="business-index">
         <div className="business-index-content">
+        <CSSTransitionGroup transitionName="example" transitionEnterTimeout={700} transitionLeaveTimeout={700}>
           <ul className="business">
-            <li>
-            {this.props.restaurants.map(
-              business => <BusinessIndexItem key={business.id} business={business} />
-            )}
-            </li>
+
+              {this.props.restaurants.map(
+                business => <BusinessIndexItem key={business.id} business={business} />
+              )}
+
           </ul>
+          </CSSTransitionGroup>
         </div>
       </section>
     );
