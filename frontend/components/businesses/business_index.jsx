@@ -11,9 +11,7 @@ class BusinessIndex extends React.Component {
 
   componentDidMount() {
     document.body.scrollTop = 0;
-    this.props.getRestaurants().then(() => {
-      this.setState({ loading: false });
-    });
+    this.setState({ loading: false });
   }
 
   render() {

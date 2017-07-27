@@ -2,11 +2,13 @@ import merge from 'lodash/merge';
 
 import {
   RECEIVE_RESTAURANTS,
-  RECEIVE_ERRORS
+  RECEIVE_RESTAURANT,
+  RECEIVE_ERRORS,
 } from '../actions/restaurant_actions';
 
 const nullRestaurantList = Object.freeze({
   restaurantList: [{}],
+  selectedRestaurant: {},
   errors: []
 })
 
@@ -18,6 +20,9 @@ const RestaurantsReducer = (state = nullRestaurantList, action) => {
       return merge({}, nullRestaurantList, {
         restaurantList
       });
+    case RECEIVE_RESTAURANT:
+      const selectedRestaurant = action.restaurant;
+      return Object.assign({}, state, {selectedRestaurant});
     case RECEIVE_ERRORS:
       let errors = action.errors;
       return merge({}, nullRestaurantList, {

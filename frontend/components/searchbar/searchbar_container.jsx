@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import SearchBar from './searchbar';
 import { withRouter } from 'react-router-dom';
+import { getRestaurants } from '../../actions/restaurant_actions'
 // import { changeFilter } from '../../actions/filter_actions';
 
 const mapStateToProps = (state) => {
@@ -11,7 +12,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return ({
-    // changeFilter: (filter, value) => dispatch(changeFilter(filter, value))
+    getRestaurants: (searchTerms) => dispatch(getRestaurants(searchTerms))
   });
 };
 

@@ -6,7 +6,6 @@ class SearchBar extends React.Component {
     super(props);
 
     this.state = {
-      place: ''
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,7 +22,7 @@ class SearchBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.history.push(`/test`)
+    this.props.getRestaurants({ term: this.state.term }).then(() => this.props.history.push(`/businesses`));
     // this.setState({place: this.input.value});
     // let currentInput = this.input.value;
 
@@ -40,7 +39,7 @@ class SearchBar extends React.Component {
           className="search-bar"
           placeholder="poke, burritos, pizza..."
           ref={input => this.input = input}
-          onChange={this.update('place')}
+          onChange={this.update('term')}
         />
     </form>
     );

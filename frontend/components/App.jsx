@@ -12,6 +12,7 @@ import Manifesto from './modal/manifesto_modal.jsx';
 import NavbarContainer from './navbar/navbar_container';
 import BusinessIndexContainer from './businesses/business_index_container';
 import SearchBarContainer from './searchbar/searchbar_container';
+import BusinessShowContainer from './businesses/business_show_container';
 // import AuthRoute from '../util/route_util.jsx'
 
 const App = () => (
@@ -31,8 +32,9 @@ const App = () => (
       <div className="search1">
         <Route exact path='/' component={SearchBarContainer} />
       </div>
+      <Route path="/business/:businessID" component={BusinessShowContainer} />
       <div className="businesslist">
-        <Route path="/test" component={BusinessIndexContainer}  className="businesslist" />
+        <Route path="/businesses" component={BusinessIndexContainer}  className="businesslist" />
       </div>
   </div>
 );
