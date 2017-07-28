@@ -66,7 +66,6 @@ class Map extends React.Component {
       window.close(this.map, marker);
     });
 
-    // hovering over html element
     const htmlElement = document.getElementById(business.name);
     if (htmlElement) {
       htmlElement.onmouseover = () => {

@@ -23,7 +23,6 @@ class Navbar extends React.Component {
   
   handleOpenModal (formType) {
     return (e) => {
-      console.log("WHAAA");
       e.preventDefault();
       this.setState({ showModal: true,
       formType });
