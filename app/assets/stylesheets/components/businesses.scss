@@ -20,11 +20,11 @@
 
 
 .business-outline {
-  // border: 1px solid #DCDEDD;
+  border: 1px solid #DCDEDD;
   // box-shadow: 0 2px 6px -2px rgba(22,22,22,0.45);
   display: flex;
   background-color: white;
-  width: 60%;
+  width: 75%;
   height: 130px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -43,12 +43,16 @@
   -webkit-font-smoothing: antialiased;
   max-width: 50em;
   line-height: 1.5;
-  padding: 0.5em 2em;
+  padding: 0.5em 1.5em;
   color: #555;
   
   strong {
     color: #333;
     font-size: 18px;
+  }
+
+  strong:hover {
+    text-decoration: underline;
   }
   
   h1 {
@@ -72,14 +76,20 @@
 .business-index {
   // background: white;
   height: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .businesslist {
   height: 100%;
+  margin-left: 45px;
 }
 
 .card-title {
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
 }
 // .business-info {
 //   padding: 24px 30px 30px 30px;

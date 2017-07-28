@@ -63,7 +63,7 @@ class Manifesto extends React.Component {
         <span className="manifestomodal">
           <ul>
           <h1>Welcome to <strong>street</strong>curious! <i className="em em-wave"></i></h1>
-          <p>Ratings raise an interesting dilemma. On one hand, they can serve as a useful indicator for consumers. Unfortunately, unforgiving rating systems and dishonest aggregators can diminish their utility. So what makes us different?</p>
+          <p>Ratings pose an interesting problem. On one hand, they can serve as a useful indicator for consumers. Unfortunately, unforgiving rating systems and dishonest aggregators can diminish their utility. So what makes us different?</p>
             <li>
               <strong>Laissez Faire</strong><br></br>We will never take money to alter or remove reviews from business pages. All businesses on the website will be treated exactly the same. Only in clear instances of spam or fraud will reviews be removed.
             </li>

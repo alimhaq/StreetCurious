@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router';
 
-class MapItem extends React.Component {
+class Map extends React.Component {
   constructor(props) {
     super(props);
     this.addBusiness = this.addBusiness.bind(this);
@@ -88,4 +88,4 @@ class MapItem extends React.Component {
   }
 }
 
-export default withRouter(MapItem);
+export default withRouter(Map);

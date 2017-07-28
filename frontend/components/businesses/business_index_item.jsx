@@ -21,9 +21,11 @@ class BusinessIndexItem extends React.Component {
             <span className="businesscards">
               <ul>
                 <div className="card-title">
-                  <span>
-                    <strong>{this.props.business.name}</strong>
-                  </span>
+                  <Link to={`/business/${this.props.business.id}`}>
+                    <span>
+                      <strong>{this.props.business.name}</strong>
+                    </span>
+                  </Link>
                   <span className='rating'>
                     <h1 className="title"><span className="highlight" style={{background: "green"}}>{this.props.business.rating * 20}</span></h1>
                   </span>
