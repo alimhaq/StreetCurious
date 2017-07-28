@@ -1,0 +1,63 @@
+.loginSignupModal {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 3em 3em;
+  color: #555;
+  display: flex;
+  flex-direction: row;
+}
+
+.loginSignupButton {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  line-height: 20px;
+}
+
+h3 {
+  line-height: 20px;
+  padding-bottom: 0.5em;
+}
+
+li {
+  margin: 15px 0;
+}
+
+.login-input {
+  position: relative !important;
+  color: #484848 !important;
+  border-color: #484848 !important;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  overflow: hidden !important;
+  font-size: 19px !important;
+  line-height: 24px !important;
+  color: #484848 !important;
+  border: 1px solid #DBDBDB;
+  margin-bottom: 16px !important;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  border-radius: 2px;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
