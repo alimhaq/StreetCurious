@@ -59,7 +59,7 @@ class BusinessIndex extends React.Component {
         <div>
           <Map
           zoom={13}
-          center={{lat: 37.780120, lng: -122.480507}}
+          center={{lat: this.props.restaurants[0].coordinates.latitude, lng: this.props.restaurants[0].coordinates.longitude}}
           businessPositions={this.businessPositions()} />
         </div>
       </section>

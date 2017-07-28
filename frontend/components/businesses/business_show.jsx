@@ -10,7 +10,12 @@ function militaryToRegularTime (time) {
   if (parseInt(time) < 1200) {
     return `${time.slice(0,2)}:${time.slice(2,4)} am`;
   } else {
-    return `${time.slice(0,2)}:${time.slice(2,4)} pm`;
+    if (parseInt(time) <= 2200) {
+      let newTime = '0' + (parseInt(time) - 1200);
+      return `${newTime.slice(0,2)}:${newTime.slice(2,4)} pm`;
+    } else {
+      return `${time.slice(0,2)}:${time.slice(2,4)} pm`;
+    }
   };
 }
 
@@ -27,6 +32,7 @@ class BusinessShow extends React.Component {
     let { hours, name, image_url, display_phone, price } = this.props.restaurant;
     return (
       <div className='business-show-header'>
+        <div className='business-divider'>
         <div className='business-show-image-frame'>
           <img className='business-show-image' src={image_url}/>
         </div>
@@ -41,7 +47,7 @@ class BusinessShow extends React.Component {
             </div>
           </div>
         </div>
-        <div>
+        <div className='business-content-container'>
           <ul>
               {hours[0].open.map((obj) => (   
               <li key = {obj.day}>
@@ -50,6 +56,7 @@ class BusinessShow extends React.Component {
               </li>
               ))}  
           </ul>
+        </div>
         </div>
       </div>
     )

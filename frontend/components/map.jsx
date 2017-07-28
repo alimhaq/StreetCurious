@@ -52,7 +52,6 @@ class Map extends React.Component {
   addWindow(business, marker) {
     const windowString = "<div class='map-window'>" +
     `<h1 class='map-name'>${business.name}</h1>` +
-    `<h2>${business.address}</h2>` +
     "</div>";
     const window = new google.maps.InfoWindow({
       content: windowString,

@@ -85,7 +85,7 @@ class Navbar extends React.Component {
           <span>
           </span>
           <div className="loginSignupModal">
-            <button onClick={this.handleCloseModal}>X</button>
+            {/* <button onClick={this.handleCloseModal}>X</button> */}
             {this.state.formType === 'login' ? (<SessionFormContainer formType='login'
             openModal={this.handleOpenModal}/>) :
             (<SessionFormContainer formType='signup'

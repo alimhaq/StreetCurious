@@ -47,6 +47,20 @@
 .business-show-header {
   position: relative;
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // background-color: white;
+}
+
+.business-divider {
   max-width: 900px;
   background-color: white;
+  height: 100%;
+  position: relative;
+}
+
+.business-content-container {
+  background: white;
+  padding: 50px;
 }
