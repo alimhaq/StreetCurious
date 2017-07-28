@@ -13,7 +13,7 @@ Please see the [docs][docs] folder for design documentation.
 Businesses throughout San Francisco can be searched through streetcurious. The search bar pings the [Yelp Fusion API][yelp-fusion], which accesses its database of businesses through AJAX calls and returns the relevant businesses based on the tags inputted. Streetcurious can then parse through the businesses and present a list of the most relevant businesses to the user.
 
 <p align="center">
-  <img src="readme_photos/business-index.png" alt="business-index">
+  <img src="https://media.giphy.com/media/bHLGNqkEnfvzi/giphy.gif" alt="Search example">
 </p>
 
 A url query string is utilized to pass the parameters to Yelp, with built in ability to also process a location and radius from the location. These features will be implemented with a multi-input search bar on the homepage (CSS styling pending).
