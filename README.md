@@ -62,7 +62,7 @@ const htmlElement = document.getElementById(business.name);
 ### Additional Social Features
 More backend features involving users will be added to increase the social features of the site. Profiles will be able to comment on comments, on profiles, make friends, and follow businesses.
 
-### Cleaner CSS and UI
+### Cleaner UI
 The amount of time devoted to CSS was surprisingly large; many of the nuances of design and CSS were not able to make it in the pre-production version of streetcurious. These will be added in due time.
 
 [streetcurious]: http://www.streetcurious.com/
