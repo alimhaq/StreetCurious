@@ -20,17 +20,19 @@ class BusinessIndexItem extends React.Component {
             </div>
             <span className="businesscards">
               <ul>
+                <div className="card-title">
+                  <span>
+                    <strong>{this.props.business.name}</strong>
+                  </span>
+                  <span className='rating'>
+                    <h1 className="title"><span className="highlight" style={{background: "green"}}>{this.props.business.rating * 20}</span></h1>
+                  </span>
+                </div>
                 <li>
-                  <strong>{this.props.business.name}</strong>
-                </li>
-                <li>
-                  {this.props.business.phone}
+                  {this.props.business.display_phone}
                 </li>
                 <li>
                   {this.props.business.price}
-                </li>
-                <li>
-                  {this.props.business.rating * 20}
                 </li>
               </ul>
             </span>

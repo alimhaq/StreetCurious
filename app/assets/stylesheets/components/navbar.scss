@@ -1,6 +1,8 @@
 header {
   // border: 1px solid black;
   height: 80px;
+  width: 100%;
+  margin-bottom: 25px;
   display: flex !important;
   justify-content: space-between;
   padding: 20px;
@@ -18,11 +20,17 @@ header {
   }
 }
 
+header span {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
 .header-group {
   font-size: 14px;
   font-weight: bold;
   margin-top: 10px;
-  margin-right: 50px;
+  margin-right: 25px;
   color: whitesmoke;
   text-transform: capitalize;
 }
@@ -58,13 +66,6 @@ header {
 .signupbutton:hover {
   text-decoration: underline;
   color: #288EAD !important;
-}
-
-span {
-  margin-left: 25px;
-  display: flex;
-  flex-direction: row;
-
 }
 
 .login-signup {

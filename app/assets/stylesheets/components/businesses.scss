@@ -20,12 +20,19 @@
 
 
 .business-outline {
-  border: 1px solid #DCDEDD;
-  box-shadow: 0 2px 6px -2px rgba(22,22,22,0.45);
+  // border: 1px solid #DCDEDD;
+  // box-shadow: 0 2px 6px -2px rgba(22,22,22,0.45);
   display: flex;
   background-color: white;
-  width: 700px;
+  width: 60%;
   height: 130px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border-radius: 2px;
+}
+
+.business-outline:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .businesscards {
@@ -41,11 +48,11 @@
   
   strong {
     color: #333;
-    font-weight: bold;
+    font-size: 18px;
   }
   
   h1 {
-    text-align: center;
+    text-align: right;
     line-height: 20px;
   }
   
@@ -62,6 +69,18 @@
   
 }
 
+.business-index {
+  // background: white;
+  height: 100%;
+}
+
+.businesslist {
+  height: 100%;
+}
+
+.card-title {
+  white-space: nowrap;
+}
 // .business-info {
 //   padding: 24px 30px 30px 30px;
 // }

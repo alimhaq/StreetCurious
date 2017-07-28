@@ -8,7 +8,14 @@ import {
 
 const nullRestaurantList = Object.freeze({
   restaurantList: [{}],
-  selectedRestaurant: {},
+  selectedRestaurant: {
+    hours: [
+      {
+        open: [],
+        is_open_now: ''
+      }
+    ]
+  },
   errors: []
 })
 

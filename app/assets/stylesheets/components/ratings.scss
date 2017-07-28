@@ -1,0 +1,53 @@
+.rating{
+  $pad-wide: 20px;
+  $color-red: #ee4035;
+  $color-white: #fff;
+  $title-pad: 0.25em;
+  $title-lineheight: $title-pad + 1;
+  display: inline-block;
+  
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    .highlight {
+
+      background: $color-red;
+      color: $color-white; 
+      padding: $title-pad;
+    }
+  
+    .highlight--wrapping {
+      left: $title-pad;
+
+      // box-shadow: $title-pad 0 0 $color-red,  
+      //             $title-pad*-1 0 0 $color-red;
+  
+    }
+    
+  
+  }
+  
+  html,
+  body {
+    background: #ccc;
+  }
+  
+  h1.title {
+    font-size: 1.2em;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  del { opacity: 0.3; }
+  
+  a { color: $color-red; }
+  
+  .bdb {
+    .highlight {
+      background-color: green;
+      box-decoration-break: clone;
+    }
+  }
+}

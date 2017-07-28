@@ -1,0 +1,52 @@
+.business-show-image{
+  width: 100%;
+  height: auto;
+}
+
+.business-show-image-frame{
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business-show-header-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  max-height: 100%;
+}
+
+.business-show-name {
+  flex: 1;
+}
+
+.business-show-card-container {
+  flex: 1;
+  padding: 30px;
+  height: 350px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.business-show-card {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  border-radius: 2px;
+}
+
+.business-show-header {
+  position: relative;
+  height: 100%;
+  max-width: 900px;
+  background-color: white;
+}
