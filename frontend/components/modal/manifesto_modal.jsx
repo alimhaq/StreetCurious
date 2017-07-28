@@ -71,12 +71,12 @@ class Manifesto extends React.Component {
               <strong>Binary Rating System</strong><br></br>Reviews are ultimately counted as either positive or negative and compiled to a score out of 100. This means that if just one grumpy customer has a bad experience, they won't have a significant impact on the overall score.
             </li>
             <li>
-              <strong>Weighted for Recency</strong><br></br>Businesses are dynamic; sometimes it takes a while for a business to find its foothold, while othertimes they can slip. The most recent reviews are more relevant to the experience now.
+              <strong>Weighted for Recency</strong><br></br>Businesses are dynamic; sometimes it takes a while for a business to find its foothold, and in other cases the quality of a business diminishes with time. By adding greater weight to more recent reviews, the rating is more relevant for the consumer and representative of the experience now.
             </li>
             <p>If you want to learn more about our mission, check out the <strong>manifesto</strong>.</p>
           </ul>
         </span>
-          <center><button onClick={this.handleCloseModal}>Replace with Continue Button</button></center>
+          <center><strong><button className="manifestobutton" onClick={this.handleCloseModal}>X</button></strong></center>
         </ReactModal>
       </div>
     );

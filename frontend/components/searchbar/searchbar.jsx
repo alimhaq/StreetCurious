@@ -37,7 +37,7 @@ class SearchBar extends React.Component {
           type="search"
           id="searchTextField"
           className="search-bar"
-          placeholder="poke, burritos, pizza..."
+          placeholder="sushi, burritos, pasta..."
           ref={input => this.input = input}
           onChange={this.update('term')}
         />
