@@ -14,7 +14,10 @@ const nullRestaurantList = Object.freeze({
         open: [],
         is_open_now: ''
       }
-    ]
+    ],
+    location: {
+      display_address: ['', '']
+    }
   },
   errors: []
 })

@@ -5,27 +5,26 @@ class Api::ReviewsController < ApplicationController
     @review.business_id = params[:business_id]
     @review.user_id = current_user.id
     if @review.save
-      render :show
+      render json: @review
     else
       render json: @review.errors.full_messages, status: 422
     end
   end
 
   def index
-    business = Business.find(params[:business_id])
-    @reviews = business.reviews
-    render :index
+    @reviews = Review.where(business_id:params[:business_id])
+    render json: @reviews
   end
 
   def show
     @review = Review.find_by(business_id: params[:business_id], id: params[:id])
-    render :show
+    render json: @review
   end
 
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
-    render :show
+    render json: @review
   end
 
   def profile_reviews

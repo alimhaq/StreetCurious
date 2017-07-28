@@ -5,7 +5,7 @@
 
 .business-show-image-frame{
   height: 350px;
-  width: 100%;
+  width: 900px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -39,9 +39,11 @@
   width: 200px;
   height: 150px;
   padding: 20px;
-  background: rgba(255,255,255,0.9);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 2px;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 .business-show-header {
@@ -63,4 +65,71 @@
 .business-content-container {
   background: white;
   padding: 50px;
+  li {
+    margin: 5px;
+  }
+
+  ul {
+    text-align: right;
+
+    .days {
+      // margin-right: 87px;
+    }
+  }
+}
+
+$pad-wide: 20px;
+$color-red: #ee4035;
+$color-white: #fff;
+$title-pad: 0.25em;
+$title-lineheight: $title-pad + 1;
+
+.business-show-title {
+  font: 36px/1.25 Ubuntu, sans-serif;
+  line-height: $title-pad + 1em;
+  text-transform: lowercase;
+  margin-bottom: 1em;
+  
+  .business-show-highlight {
+    display: inline;
+    background: $color-red;
+    color: $color-white; 
+    padding: $title-pad;
+  }
+
+  .business-show-highlight--wrapping {
+    position: relative;
+    left: $title-pad;
+    padding-left: 0;
+    box-shadow: $title-pad 0 0 $color-red,  
+                $title-pad*-1 0 0 $color-red;
+
+  }
+  
+  html,
+  body {
+    background: #ccc;
+    text-align: left;
+    padding: 3%;
+    font: 100%/1.5 Ubuntu, sans-serif;
+  }
+  
+  h1.title {
+    font-size: 3em;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  
+  del { opacity: 0.3; }
+  
+  a { color: $color-red; }
+  
+  .bdb {
+    .highlight {
+      background-color: green;
+      box-decoration-break: clone;
+    }
+  }
 }
