@@ -1,17 +1,18 @@
 export const fetchReviews = (businessId) => (
   $.ajax({
     method: 'GET',
-    url: `/api/businesses/${businessId}/reviews`
+    url: `/api/reviews`,
+    data: {business_id: businessId}
   })
 );
 
 export const createReview = (businessId, review) => (
   $.ajax({
     method: 'POST',
-    url: `/api/businesses/${businessId}/reviews`,
+    url: `/api/reviews`,
     dataType: 'json',
     contentType: 'application/json',
-    data: JSON.stringify({ review })
+    data: JSON.stringify({ review, business_id: businessId })
   })
 );
 

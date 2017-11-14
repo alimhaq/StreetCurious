@@ -7,7 +7,8 @@ export const CLEAR_REVIEW_ERRORS = "CLEAR_REVIEW_ERRORS";
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
 
 export const requestReviews = (businessId) => dispatch => (
-  ReviewUtil.fetchReviews(businessId).then(data => dispatch(receiveReviews(data)))
+  ReviewUtil.fetchReviews(businessId).then(data => {dispatch(receiveReviews(data))
+  console.log(data)})
 );
 
 export const createReview = (businessId, review) => dispatch => (

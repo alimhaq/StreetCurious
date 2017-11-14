@@ -1,4 +1,6 @@
 import React from 'react';
+import ReviewForm from '../reviews/review_form';
+import Reviews from '../reviews/review';
 
 const DAYS_OF_WEEK = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun']
 
@@ -58,6 +60,14 @@ class BusinessShow extends React.Component {
           </div>
         </div>
         <div className='business-content-container'>
+          <div>
+            <ReviewForm currentUser={this.props.user} businessid={this.props.match.params.businessID} 
+            createReview={this.props.createReview}
+            />
+            <Reviews requestReviews={this.props.requestReviews} 
+            businessid={this.props.match.params.businessID} 
+            reviews={this.props.reviews} />
+          </div>
           <ul>
               {hours[0].open.map((obj) => (   
               <li key = {obj.day}>

@@ -4,7 +4,7 @@ class Api::ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.business_id = params[:business_id]
     @review.user_id = current_user.id
-    if @review.save
+    if @review.save!
       render json: @review
     else
       render json: @review.errors.full_messages, status: 422
@@ -12,8 +12,8 @@ class Api::ReviewsController < ApplicationController
   end
 
   def index
-    @reviews = Review.where(business_id:params[:business_id])
-    render json: @reviews
+    @reviews = Review.where(business_id: params[:business_id]).includes(:user)
+    render :index
   end
 
   def show
@@ -35,6 +35,6 @@ class Api::ReviewsController < ApplicationController
 
   private
   def review_params
-    params.require(:review).permit(:title, :body, :rating)
+    params.require(:review).permit(:title, :body, :rating, :business_id)
   end
 end

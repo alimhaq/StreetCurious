@@ -19,8 +19,11 @@ ActiveRecord::Schema.define(version: 20170728211312) do
     t.string   "business_id"
     t.integer  "user_id"
     t.integer  "rating"
+    t.string   "title"
+    t.string   "body"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.index ["business_id"], name: "index_reviews_on_business_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
