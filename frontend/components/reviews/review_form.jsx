@@ -26,9 +26,9 @@ class ReviewForm extends React.Component{
       body: this.state.body
     }
     let that = this;
-    // if (this.props.currentUser) {
+    if (this.props.currentUser) {
       this.props.createReview(this.props.businessid, review);
-    // }
+    }
   }
 
   reviewForm() {
@@ -36,8 +36,12 @@ class ReviewForm extends React.Component{
       <section className="book-trip-page">
         <form className="form-horizontal">Write a review
           {this.selectRating()}
+          <div className="say-hello-container">REview title:
+            <textarea autoFocus="autofocus" className="say-yo" value={this.state.title} onChange={this.handleSelectChange('title')}
+            />
+          </div>
           <div className="say-hello-container">Tell everyone about your experience:
-            <textarea autoFocus="autofocus" className="say-yo" value={this.state.body} onChange={this.handleSelectChange('body')}
+            <textarea className="say-yo" value={this.state.body} onChange={this.handleSelectChange('body')}
             />
           </div>
           <button className="tosubmitdarkblue bk-tp-btn post-review" onClick={(e) => this.handleSubmit(e)}>

@@ -7,7 +7,7 @@ import { createReview, requestReviews } from '../../actions/review_actions';
 const mapStatetoProps = (state, ownProps) => {
   return {
     restaurant: state.restaurants.selectedRestaurant,
-    user: state.session.curerntUser,
+    user: state.session.currentUser,
     reviews: state.reviews
   };
 }

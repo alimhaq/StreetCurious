@@ -21,7 +21,6 @@ class Reviews extends React.Component{
         <div key={idx}>
           <div className="review-entry-top">
             <div className="review-entry-head">
-              <img className="propics" src={review.image_url}/>
               <div>
                 <div className="r-author-name">
                   {review.author.username}
